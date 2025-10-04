@@ -261,9 +261,17 @@ function App() {
                   {item}
                 </button>
               ))}
-              <button className="w-full bg-lime-600 hover:bg-lime-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors">
-                Cotizar Proyecto
-              </button>
+              {/* Contact Button */}
+              <a
+                href="https://wa.me/56958290583"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-2 bg-lime-600 hover:bg-lime-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors"
+              >
+                <FaWhatsapp className="w-5 h-5" />
+                Contactar
+              </a>
+
             </div>
           </div>
         )}
