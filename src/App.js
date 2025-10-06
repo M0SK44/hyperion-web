@@ -615,73 +615,49 @@ function App() {
       </footer>
 
       {selectedProject && (
-        <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center">
+        <div
+          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
+        >
+
           {/* Close Button */}
           <button
             onClick={closeGallery}
-            className="absolute top-4 right-4 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
+            className="absolute top-4 right-4 z-[120] w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
             aria-label="Cerrar galería"
+            style={{ pointerEvents: "auto" }} // 🔹 asegura que reciba clics
           >
             <XIcon />
           </button>
 
           {/* Project Info */}
-          <div className="absolute top-4 left-4 z-10 text-white">
+          <div className="absolute top-4 left-4 z-[110] text-white pointer-events-none">
             <p className="text-lime-400 text-sm font-medium mb-1">{selectedProject.category}</p>
             <h3 className="text-2xl font-bold">{selectedProject.title}</h3>
           </div>
 
-          {/* Image Counter */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm">
-            {currentImageIndex + 1} / {selectedProject.gallery.length}
-          </div>
+          {/* Imagen principal */}
+          <img
+            src={selectedProject.gallery[currentImageIndex]}
+            alt={selectedProject.title}
+            className="max-h-[90vh] max-w-[90vw] object-contain z-[100]"
+          />
 
-          {/* Previous Button */}
+          {/* Controles de navegación */}
           <button
             onClick={prevImage}
-            className="absolute left-4 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
-            aria-label="Imagen anterior"
+            className="absolute left-4 text-white/70 hover:text-white text-4xl z-[110]"
           >
             <ChevronLeftIcon />
           </button>
-
-          {/* Next Button */}
           <button
             onClick={nextImage}
-            className="absolute right-4 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
-            aria-label="Siguiente imagen"
+            className="absolute right-4 text-white/70 hover:text-white text-4xl z-[110]"
           >
             <ChevronRightIcon />
           </button>
-
-          {/* Main Image */}
-          <div className="w-full h-full flex items-center justify-center p-4 md:p-8">
-            <img
-              src={selectedProject.gallery[currentImageIndex] || "/placeholder.svg"}
-              alt={`${selectedProject.title} - Imagen ${currentImageIndex + 1}`}
-              className="max-w-full max-h-full object-contain rounded-lg"
-            />
-          </div>
-
-          {/* Thumbnail Navigation */}
-          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 z-10 flex gap-2 overflow-x-auto max-w-[90vw] px-4 py-2">
-            {selectedProject.gallery.map((img, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentImageIndex(idx)}
-                className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${idx === currentImageIndex ? "border-lime-500 scale-110" : "border-white/30 hover:border-white/60"
-                  }`}
-              >
-                <img
-                  src={img || "/placeholder.svg"}
-                  alt={`Thumbnail ${idx + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
-          </div>
         </div>
       )}
+
     </div>
   )
 }
