@@ -76,10 +76,11 @@ function App() {
 
   const projects = [
     {
-      title: "Servicios a edificios",
-      category: "Seguimiento, enfierradura, hormigones y terminaciones",
+      title: "Servicios operacionales",
+      category: "Mano de obra especializada para tus partidas, garantizando supervisión 100%",
       image: "/servicios_edificios/edificio.jpg",
       gallery: [
+        "/servicios_edificios/fotoarriba.jpg",
         "/servicios_edificios/seguimiento.jpg",
         "/servicios_edificios/seguimiento2.jpg",
         "/servicios_edificios/seguimiento3.jpg",
@@ -89,19 +90,29 @@ function App() {
         "/servicios_edificios/radier.jpg",
         "/servicios_edificios/moldaje.jpeg",
         "/servicios_edificios/pintura.jpeg",
+        "/servicios_edificios/final.jpg",
+        "/servicios_edificios/final6.jpg",
+        "/servicios_edificios/pinturas.jpeg",
+        "/servicios_edificios/pinturas2.jpeg",
+        "/servicios_edificios/rencoret.jpeg",
+        "/servicios_edificios/rencoret2.jpeg",
+        "/servicios_edificios/rencoret3.jpeg",
+        "/servicios_edificios/rencoret4.jpeg",
+
+
       ],
     },
     {
       title: "Servicios integrales",
-      category: "Sanitaria, climatización, supervisión y gestión de obras",
+      category: "Alternativas técnicas y financieras que optimizan costos, plazos y calidad",
       image: "/servicios_integrales/servicio_integral.jpeg",
       gallery: [
-        "/servicios_integrales/servicio1.jpeg",
+
         "/servicios_integrales/servicio2.jpeg",
         "/servicios_integrales/servicio3.jpeg",
         "/servicios_integrales/servicio4.jpeg",
         "/servicios_integrales/servicio5.jpeg",
-        "/servicios_integrales/servicio6.jpeg",
+
       ],
     },
     {
@@ -115,6 +126,15 @@ function App() {
         "/trabajos_verticales/vertical4.jpeg",
         "/trabajos_verticales/vertical5.jpeg",
         "/trabajos_verticales/vertical6.jpeg",
+        "/trabajos_verticales/vertical7.jpeg",
+        "/trabajos_verticales/vertical8.jpeg",
+        "/trabajos_verticales/vertical9.jpeg",
+        "/trabajos_verticales/vertical10.jpeg",
+        "/trabajos_verticales/vertical11.jpeg",
+        "/trabajos_verticales/vertical12.jpeg",
+        "/trabajos_verticales/vertical13.jpeg",
+        "/trabajos_verticales/vertical14.jpeg",
+        "/trabajos_verticales/vertical15.jpeg",
 
       ],
     },
@@ -128,14 +148,18 @@ function App() {
         "/obras_menores/quincho2.jpeg",
         "/obras_menores/quincho3.jpeg",
         // Piscinas
-        "/obras_menores/piscina.jpg",
-        "/obras_menores/piscina2.jpg",
         "/obras_menores/piscina3.jpg",
+        "/obras_menores/piscina2.jpg",
+        "/obras_menores/piscina.jpg",
         "/obras_menores/piscina4.jpg",
         // quincho  2
-        "/obras_menores/quincho_1.jpeg",
+
         "/obras_menores/quincho_2.jpeg",
         "/obras_menores/quincho_3.jpeg",
+        "/obras_menores/carpinteria.jpeg",
+        "/obras_menores/domo.jpeg",
+        "/obras_menores/radier.jpg",
+
 
 
       ],
@@ -199,17 +223,18 @@ function App() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+              <div className="w-16 h-16 rounded-lg flex items-center justify-center overflow-hidden">
                 <img
                   src="/logotipo.png"
                   alt="Logo"
-                  className="w-8 h-8 object-contain"
+                  className="w-14 h-14 object-contain"
                 />
               </div>
-              <span className={`text-2xl font-bold tracking-tight ${isScrolled ? "text-gray-900" : "text-white"}`}>
+              <span className={`text-3xl font-bold tracking-tight ${isScrolled ? "text-gray-900" : "text-white"}`}>
                 HYPERIÓN
               </span>
             </div>
+
 
 
             {/* Desktop Menu */}
@@ -227,7 +252,7 @@ function App() {
 
               {/* Contact Button */}
               <a
-                href="https://wa.me/56958290583"
+                href="https://wa.me/932184980"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-lime-600 hover:bg-lime-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors"
@@ -263,7 +288,7 @@ function App() {
               ))}
               {/* Contact Button */}
               <a
-                href="https://wa.me/56958290583"
+                href="https://wa.me/56932184980"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 bg-lime-600 hover:bg-lime-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors"
@@ -290,12 +315,14 @@ function App() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-            Espacios que transforman
-            <span className="block text-lime-500">tu visión en realidad</span>
+            Creamos más que espacios
+            <span className="block text-lime-500 text-4xl md:text-5xl lg:text-6xl">
+              Construimos escenarios de éxito
+            </span>
           </h1>
+
           <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Diseño arquitectónico moderno y construcción de calidad. Creamos espacios funcionales que elevan tu estilo
-            de vida.
+
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -329,15 +356,16 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Construimos con propósito y precisión
+                Somos una empresa que transforma espacios en oportunidades
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                En Hyperión, combinamos experiencia técnica con visión creativa para entregar proyectos que superan
-                expectativas. Cada espacio que diseñamos refleja calidad, funcionalidad y estética contemporánea.
+                Somos una empresa que construye con propósito y precisión. En Hyperión combinamos
+                experiencia técnica y visión crea va para entregar espacios modernos, funcionales y de calidad.
+
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Nuestro equipo de profesionales especializados trabaja con los más altos estándares de la industria,
-                garantizando resultados excepcionales en cada proyecto.
+                Nuestro compromiso es superar expecta vas con proyectos que generan confianza, eficiencia y
+                valor real para su inversión.
               </p>
               <button onClick={() => scrollToSection("servicios")} className="border-2 border-lime-600 text-lime-600 hover:bg-lime-600 hover:text-white px-6 py-3 rounded-lg font-medium transition-all inline-flex items-center gap-2">
                 Conocer más
@@ -346,11 +374,12 @@ function App() {
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+                src="/fondo2.jpg" // reemplaza con la ruta correcta
                 alt="About Hyperión"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
+
           </div>
         </div>
       </section>
@@ -389,12 +418,12 @@ function App() {
               },
               {
                 title: "Servicios integrales de ingeniería",
-                description: "Proyectos de especialidades (sanitaria, climatización), supervisión y gestión de obras, y asesoría técnica para optimización de costos y plazos.",
+                description: "Analizamos su proyecto y entregamos alterna vas técnicas y financieras que opmizan costos, plazos y calidad, para que tome decisiones seguras y rentables en su inversión",
                 icon: "💡",
               },
               {
-                title: "Mantenimiento y postventa",
-                description: "Reparaciones menores, mantenciones programadas y conservación de infraestructura.",
+                title: "Mantenimiento",
+                description: "Mantenimiento profesional de infraestructuras, oficinas y locales comerciales, garatizando seguridad, durabilidad y operatividad para que usted se enfoque en su negocio con tranquilidad",
                 icon: "🛠️",
               },
             ].map((service, index) => (
@@ -470,8 +499,8 @@ function App() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Teléfono</h3>
-                    <a href="tel:+56956063428" className="text-gray-600 hover:text-lime-600 transition-colors">
-                      +56 9 5606 3428
+                    <a href="tel:+56932184980" className="text-gray-600 hover:text-lime-600 transition-colors">
+                      +56932184980
                     </a>
                   </div>
                 </div>
@@ -480,12 +509,22 @@ function App() {
                   <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MailIcon className="w-6 h-6 text-lime-600" />
                   </div>
-                  <div>
+                  <div className="space-y-1">
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:contacto@hyperion.cl" className="text-gray-600 hover:text-lime-600 transition-colors">
-                      contacto@hyperion.cl
+                    <a
+                      href="mailto:ventas@hyperionchile.com"
+                      className="block text-gray-600 hover:text-lime-600 transition-colors"
+                    >
+                      ventas@hyperionchile.com
+                    </a>
+                    <a
+                      href="mailto:gestion@hyperionchile.com"
+                      className="block text-gray-600 hover:text-lime-600 transition-colors"
+                    >
+                      gestion@hyperionchile.com
                     </a>
                   </div>
+
                 </div>
 
                 <div className="flex items-start gap-4">
@@ -613,6 +652,19 @@ function App() {
           </div>
         </div>
       </footer>
+
+
+
+      {/* ✅ Botón flotante de WhatsApp (efecto suave) */}
+      <a
+        href="https://wa.me/56932184980?text=Hola%20Hyperión,%20quiero%20más%20información%20sobre%20sus%20servicios."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center z-50 animate-pulse hover:scale-110 transition-transform duration-300"
+      >
+        <FaWhatsapp className="w-7 h-7" />
+      </a>
+
 
       {selectedProject && (
         <div

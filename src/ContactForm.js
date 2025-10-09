@@ -15,10 +15,10 @@ function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_qn7c3rm",
-        "template_0uf0wv4",
+        "service_smbaany",
+        "template_4vx63qa",
         form.current,
-        "Dz2VS-Jc19F2ocqOB"
+        "4tPbZ0-16gQ6ic0IM"
       )
       .then(
         () => {
