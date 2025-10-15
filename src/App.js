@@ -87,6 +87,7 @@ function App() {
         "/servicios_edificios/enfierradura.jpeg",
         "/servicios_edificios/enfierradura2.jpeg",
         "/servicios_edificios/enfierradura3.jpeg",
+        "/obras_menores/radier.jpg",
         "/servicios_edificios/radier.jpg",
         "/servicios_edificios/moldaje.jpeg",
         "/servicios_edificios/pintura.jpeg",
@@ -105,26 +106,20 @@ function App() {
     {
       title: "Servicios integrales",
       category: "Alternativas técnicas y financieras que optimizan costos, plazos y calidad",
-      image: "/servicios_integrales/servicio_integral.jpeg",
+      image: "/servicios_integrales/2..jpg",
       gallery: [
 
-        "/servicios_integrales/servicio2.jpeg",
-        "/servicios_integrales/servicio3.jpeg",
-        "/servicios_integrales/servicio4.jpeg",
-        "/servicios_integrales/servicio5.jpeg",
         "/servicios_integrales/1.png",
-        "/servicios_integrales/2.jpg",
-        "/servicios_integrales/3.jpg",
-        "/servicios_integrales/4.jpg",
-        "/servicios_integrales/5.jpg",
-        "/servicios_integrales/6.jpg",
-        "/servicios_integrales/7.jpg",
-        "/servicios_integrales/8.jpg",
-        "/servicios_integrales/9.jpg",
-        "/servicios_integrales/10.jpg",
-        "/servicios_integrales/11.jpg",
-        "/servicios_integrales/12.jpg",
-       
+        "/servicios_integrales/2..jpg",
+        "/servicios_integrales/2.2.jpg",
+         "/servicios_integrales/3.jpg",
+         "/servicios_integrales/4.jpg",
+         "/servicios_integrales/5.jpg",
+         "/servicios_integrales/6.jpg",
+         "/servicios_integrales/7.jpg",
+         "/servicios_integrales/8.jpg",
+         "/servicios_integrales/9.jpg",
+
 
       ],
     },
@@ -171,7 +166,7 @@ function App() {
         "/obras_menores/quincho_3.jpeg",
         "/obras_menores/carpinteria.jpeg",
         "/obras_menores/domo.jpeg",
-        "/obras_menores/radier.jpg",
+       
 
 
 
@@ -637,22 +632,13 @@ function App() {
               <h3 className="font-semibold mb-4">Síguenos</h3>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-lime-500 transition-colors">
+                  <a href="https://www.instagram.com/hyperion_construcciones/" className="hover:text-lime-500 transition-colors">
                     Instagram
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" className="hover:text-lime-500 transition-colors">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-lime-500 transition-colors">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-lime-500 transition-colors">
+                  <a href="https://wa.me/56932184980?text=Hola%20Hyperión,%20quiero%20más%20información%20sobre%20sus%20servicios." className="hover:text-lime-500 transition-colors">
                     WhatsApp
                   </a>
                 </li>
@@ -668,7 +654,7 @@ function App() {
 
 
 
-      {/* ✅ Botón flotante de WhatsApp (efecto suave) */}
+      {/*  Botón flotante de WhatsApp (efecto suave) */}
       <a
         href="https://wa.me/56932184980?text=Hola%20Hyperión,%20quiero%20más%20información%20sobre%20sus%20servicios."
         target="_blank"
